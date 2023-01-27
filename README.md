@@ -7,11 +7,15 @@ I chose to focus on problem statement 1, anonymizing customer information. The f
 
 ## Running
 To run the code you can use docker with
-`docker build python-lf-challenge`
-`docker run python-lf-challenge`
-
+```
+docker build python-lf-challenge
+docker run python-lf-challenge
+```
 Or if you want to keep the output, you can run 
-`python run.py`
+
+```
+python run.py
+```
 
 The output files will be in `output/*` 
 
@@ -28,7 +32,7 @@ The output files are put in a temporary location and deleted after
 ## Assumptions
  - Due to no exact anonymization method specified in the specs, I opted to pseudo-anonymize the data requested. All first names and last names will have the first letter unchanged and all street names still have the same suffix.
 
-    `John,Smith,48 Blueberry Ave,17/12/1967` becomes `Jadiek,Smzjwn,cxkmh Ave,17/12/1967`
+    `John,Smith,48 Blueberry Ave,17/12/1967` becomes `Jadiek,Smzjwn,11 cxkmh Ave,17/12/1967`
 
  - There are no duplicates
  - The address will always be in three parts

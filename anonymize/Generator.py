@@ -5,7 +5,6 @@ import datetime
 from .Constants import *
 
 class Mock_data_helper:
-  
   def __init__(self, num_rows = 10, filename = 'people.csv'):
     self.num_rows = num_rows
     self.filename = filename
