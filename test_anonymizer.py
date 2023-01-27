@@ -31,4 +31,4 @@ if __name__ == '__main__':
   print('Running unit tests...')
   test_anonymize_name()
   test_anonymize_address()
-  print('COMPLETED ALL TESTS')
+  print('ANONYMIZER - COMPLETED ALL TESTS')
