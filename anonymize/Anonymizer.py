@@ -44,7 +44,7 @@ class Helper:
 
   # Save to file
   def save_anonymized_data(self):
-    print(f'Saving anonymous data to {self.new_filename}...')
+    print(f'Saving anonymized data to {self.new_filename}...')
     data = self.__read_data()
     data = self.anonymize_all_data(data)
 
