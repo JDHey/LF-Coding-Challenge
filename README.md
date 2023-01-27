@@ -5,29 +5,36 @@ Files for a coding assessment provided by LF.
 
 I chose to focus on problem statement 1, anonymizing customer information. The full specifications can be seen at the bottom of this README. My code will both generate mock csv customer data AND anonymize said data. Each processes is completely seperate, using individual classes within a package and with external unit testing.
 
-## Running
-To run the code you can use docker with
+- [x] Creates mock data
+- [x] Anonymizes created mock data
+- [x] Full modularity
+- [x] Unit tests
+- [x] UML design
+- [x] Easy execution with command prompt necessary
+
+## How to execute
+### For the easy method with tests, just double click `run.bat` 📜
+
+To run with docker (with containerised csv outputs) use
 ```
 docker build python-lf-challenge
 docker run python-lf-challenge
 ```
-Or if you want to keep the output, you can run 
 
+To execute main functions with csv outputs 
 ```
-python run.py
+python run.py 
 ```
 
 The output files will be in `output/*` 
 
 
-## Testing
-To run tests use
+To run individual test files use
 ```
 python test_anonymizer.py
 python test_generator.py
 ```
-
-The output files are put in a temporary location and deleted after
+The output files for tests are put in a temporary location and deleted straight after
 
 ## Assumptions
  - Due to no exact anonymization method specified in the specs, I opted to pseudo-anonymize the data requested. All first names and last names will have the first letter unchanged and all street names still have the same suffix.

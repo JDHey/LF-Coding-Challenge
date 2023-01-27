@@ -40,4 +40,4 @@ if __name__ == '__main__':
       os.remove(os.path.join(SAVE_LOCATION, file))
     os.rmdir(SAVE_LOCATION)
   
-  print('COMPLETED ALL TESTS')
+  print('GENERATOR - COMPLETED ALL TESTS')
